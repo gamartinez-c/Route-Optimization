@@ -25,7 +25,7 @@ public class ProblemData {
         this.mean = mean;
         this.std = std;
         try {
-            File file = new File(currentDirectory + "\\Java\\datos\\OES - 1008 1080 - caso - replicado - de - kron.xlsx");
+            File file = new File(currentDirectory + "\\Java\\datos\\OES - 1008 1080 - caso - replicado - de - Tool.xlsx");
             FileInputStream data = new FileInputStream(file);
             //creating Workbook instance that refers to .xlsx file
             XSSFWorkbook wb = new XSSFWorkbook(data);

@@ -291,7 +291,7 @@ public class Solution {
         this.loss = auxLoss;
     }
 
-    public boolean entraEnOptimizacionDeKron(){
+    public boolean entraEnOptimizacionDeTool(){
         for (Crew crew: Route.getMapaNodosFijos().keySet()){
             Route route = getRoutesByCrew().get(crew);
             if (route.getRouteStopSequence().size() > 1){

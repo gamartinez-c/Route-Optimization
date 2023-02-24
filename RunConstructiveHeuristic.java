@@ -238,7 +238,7 @@ public class RunConstructiveHeuristic {
         while (bestSolutions.size() != numberOfSolutions && contador < solutionsAExport.size()) {
             Solution solAux = solutionsAExport.get(contador);
             solAux.recalculateRouteForNewDuration();
-            if (solAux.entraEnOptimizacionDeKron()) {
+            if (solAux.entraEnOptimizacionDeTool()) {
                 bestSolutions.add(solutionsAExport.get(contador));
             }
             contador ++;

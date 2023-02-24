@@ -60,7 +60,7 @@ public class Main {
         }
 
 
-        //System.out.println("KRON LEVANTADO EXCEL");
+        //System.out.println("Tool LEVANTADO EXCEL");
         //System.out.println(solutionFunctionExcel(rnCE.getProblemData()));
         
         ArrayList<Solution> solutionsToGetRobust = new ArrayList<>(setBestSol);
@@ -74,11 +74,11 @@ public class Main {
         //System.out.println("------------------bestSol---------------------");
        //System.out.println(bestSol);
         
-        //Recalculo media para esta nueva sol y para la sol de kron.
-        /*Solution solKron = solutionFunctionExcel(rnCE.getProblemData());
+        //Recalculo media para esta nueva sol y para la sol de Tool.
+        /*Solution solTool = solutionFunctionExcel(rnCE.getProblemData());
         solutionsToGetRobust.clear();
         solutionsToGetRobust.add(bestSol);
-        solutionsToGetRobust.add(solKron);
+        solutionsToGetRobust.add(solTool);
         HashMap<String, Double> solutions3 = RecalculateMean.meanForSolution(rnCE, solutionsToGetRobust,
          numberOfSetToRobust);
 
@@ -89,17 +89,17 @@ public class Main {
         
         rnCE.getProblemData().refreshDistributions(true);
         bestSol.recalculateRouteForNewDuration();
-        solKron.recalculateRouteForNewDuration();
+        solTool.recalculateRouteForNewDuration();
     	bestSol.calculateLoss();
-    	solKron.calculateLoss();
+    	solTool.calculateLoss();
         //System.out.println(bestSol);
-        //System.out.println(solKron);
+        //System.out.println(solTool);
 
         //System.out.println("PERDIDA A 7 DIAS");
         bestSol.calculateLossSevenDays();
-        solKron.calculateLossSevenDays();
-        //System.out.println("SOLUCION KRON  " + solKron);
-        solKron.visualisacionSimple();*/
+        solTool.calculateLossSevenDays();
+        //System.out.println("SOLUCION Tool  " + solTool);
+        solTool.visualisacionSimple();*/
         //System.out.println("BEST SOLUTION  " + bestSol);
         bestSol.visualisacionSimple();
 
@@ -115,7 +115,7 @@ public class Main {
         ArrayList<Route> routesList = new ArrayList<Route>();
         Map<Crew, Route> routesByCrew = new HashMap<Crew, Route>();
         try{
-            File file = new File(System.getProperty("user.dir") + "\\Java\\Solutions Kron\\Corrida - 1008 1080.xlsx");
+            File file = new File(System.getProperty("user.dir") + "\\Java\\Solutions Tool\\Corrida - 1008 1080.xlsx");
             FileInputStream data = new FileInputStream(file);
             //creating Workbook instance that refers to .xlsx file
             XSSFWorkbook wb = new XSSFWorkbook(data);
